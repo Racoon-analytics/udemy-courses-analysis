@@ -14,6 +14,7 @@ plt.show()
 
 corr = df[['price', 'num_reviews', 'content_duration']].corr()
 
+
 plt.figure(figsize=(8, 6))
 sns.heatmap(corr, annot=True, cmap="coolwarm", linewidths=0.5)
 plt.title("Кореляційна матриця між ціною, кількістю відгуків і тривалістю курсу")
